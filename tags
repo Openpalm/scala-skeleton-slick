@@ -4,9 +4,20 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Tables	mysql/slick-codegen-example/src/main/scala/Example.scala	/^object Tables extends {$/;"	c
-profile	mysql/slick-codegen-example/src/main/scala/Example.scala	/^  val profile = slick.driver.H2Driver$/;"	l
-Example	mysql/slick-codegen-example/src/main/scala/Example.scala	/^object Example extends App {$/;"	c
-url	mysql/slick-codegen-example/src/main/scala/Example.scala	/^  val url = "jdbc:h2:mem:test;INIT=runscript from 'src\/main\/sql\/create.sql'"$/;"	l
-db	mysql/slick-codegen-example/src/main/scala/Example.scala	/^  val db = Database.forURL(url, driver = "org.h2.Driver")$/;"	l
-q	mysql/slick-codegen-example/src/main/scala/Example.scala	/^  val q = Companies.join(Computers).on(_.id === _.manufacturerId)$/;"	l
+playground	src/test/scala/testExample.scala	/^package playground$/;"	p
+theTests	src/test/scala/testExample.scala	/^class theTests extends FunSuite with MustMatchers with TypeCheckedTripleEquals {$/;"	c
+TestData	src/test/scala/testExample.scala	/^  sealed trait TestData[A,B] {$/;"	t
+data	src/test/scala/testExample.scala	/^    def data: Either[A, B]$/;"	m
+GoodData	src/test/scala/testExample.scala	/^  case class GoodData[A,B](data: Either[A,B]) extends TestData[A,B]$/;"	c
+BadData	src/test/scala/testExample.scala	/^  case class BadData[A,B](data: Either[A,B]) extends TestData[A,B]$/;"	c
+testData	src/test/scala/testExample.scala	/^    val testData = GoodData(Right(1))$/;"	l
+testData	src/test/scala/testExample.scala	/^    val testData = BadData(Left(0))$/;"	l
+com.app.globals	src/main/scala/Globals.scala	/^package com.app.globals$/;"	p
+Globals	src/main/scala/Globals.scala	/^object Globals {$/;"	c
+one	src/main/scala/Globals.scala	/^  val one = 1$/;"	l
+Tables	sql/slick-codegen-example/src/main/scala/Example.scala	/^object Tables extends {$/;"	c
+profile	sql/slick-codegen-example/src/main/scala/Example.scala	/^  val profile = slick.driver.H2Driver$/;"	l
+Example	sql/slick-codegen-example/src/main/scala/Example.scala	/^object Example extends App {$/;"	c
+url	sql/slick-codegen-example/src/main/scala/Example.scala	/^  val url = "jdbc:h2:mem:test;INIT=runscript from 'src\/main\/sql\/create.sql'"$/;"	l
+db	sql/slick-codegen-example/src/main/scala/Example.scala	/^  val db = Database.forURL(url, driver = "org.h2.Driver")$/;"	l
+q	sql/slick-codegen-example/src/main/scala/Example.scala	/^  val q = Companies.join(Computers).on(_.id === _.manufacturerId)$/;"	l
