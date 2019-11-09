@@ -1,0 +1,1 @@
+docker run -d --name mysql.localhost -p 3306 alpine-mysql

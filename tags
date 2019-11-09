@@ -1,0 +1,12 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Tables	mysql/slick-codegen-example/src/main/scala/Example.scala	/^object Tables extends {$/;"	c
+profile	mysql/slick-codegen-example/src/main/scala/Example.scala	/^  val profile = slick.driver.H2Driver$/;"	l
+Example	mysql/slick-codegen-example/src/main/scala/Example.scala	/^object Example extends App {$/;"	c
+url	mysql/slick-codegen-example/src/main/scala/Example.scala	/^  val url = "jdbc:h2:mem:test;INIT=runscript from 'src\/main\/sql\/create.sql'"$/;"	l
+db	mysql/slick-codegen-example/src/main/scala/Example.scala	/^  val db = Database.forURL(url, driver = "org.h2.Driver")$/;"	l
+q	mysql/slick-codegen-example/src/main/scala/Example.scala	/^  val q = Companies.join(Computers).on(_.id === _.manufacturerId)$/;"	l
